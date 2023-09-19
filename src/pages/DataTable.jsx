@@ -88,6 +88,9 @@ function DataTable() {
     {
       accessorKey: "GRIN",
       header: () => <span>GRIN</span>,
+      cell: (info) => (
+        <a href={info.getValue()} className="text-cyan-400 font-semibold" target="_blank" >Enlace</a>
+      ),
     },
   ];
 
